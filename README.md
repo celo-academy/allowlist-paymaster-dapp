@@ -11,7 +11,7 @@
 </table>
  <h2 align="center">Allowlist Paymaster using ThirdWeb SDK</h2>
  <p align="center">
-This is the implementation of Allowlist Paymaster, a paymaster that allows a list of `UserOperation` senders to be sponsored by the paymaster
+This is the implementation of Allowlist Paymaster, a paymaster that allows a list of <strong>UserOperation</strong> senders to be sponsored by the paymaster
 </p>
 </p>
 
