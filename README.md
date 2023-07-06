@@ -1,6 +1,11 @@
-# Allowlist Paymaster using ThirdWeb SDK
-
+<p align="center"> 
+  <img width="100px" src="https://github.com/celo-org/celo-composer/blob/main/images/readme/celo_isotype.svg" align="center" alt="Celo" />
+  <a href="https://thirdweb.com"><img src="https://github.com/thirdweb-dev/typescript-sdk/blob/main/logo.svg?raw=true" width="100" alt=""/></a>
+ <h2 align="center">Allowlist Paymaster using ThirdWeb SDK</h2>
+ <p align="center">
 This is the implementation of Allowlist Paymaster, a paymaster that allows a list of `UserOperation` senders to be sponsored by the paymaster
+</p>
+</p>
 
 ## Table of Contents
 
