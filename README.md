@@ -1,9 +1,17 @@
 <p align="center"> 
+<table align="center">
+  <tr>
+    <td>
   <img width="100px" src="https://github.com/celo-org/celo-composer/blob/main/images/readme/celo_isotype.svg" align="center" alt="Celo" />
-  <a href="https://thirdweb.com"><img src="https://github.com/thirdweb-dev/typescript-sdk/blob/main/logo.svg?raw=true" width="100" alt=""/></a>
+    </td>
+    <td>
+  <img src="https://github.com/thirdweb-dev/typescript-sdk/blob/main/logo.svg?raw=true" width="100" margin="20 20" alt=""/>    
+    </td>
+  </tr>
+</table>
  <h2 align="center">Allowlist Paymaster using ThirdWeb SDK</h2>
  <p align="center">
-This is the implementation of Allowlist Paymaster, a paymaster that allows a list of `UserOperation` senders to be sponsored by the paymaster
+This is the implementation of Allowlist Paymaster, a paymaster that allows a list of <strong>UserOperation</strong> senders to be sponsored by the paymaster
 </p>
 </p>
 
