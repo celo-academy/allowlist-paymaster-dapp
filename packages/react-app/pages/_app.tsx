@@ -12,6 +12,7 @@ import { PaymasterAPI } from "@account-abstraction/sdk";
 import { UserOperationStruct } from "@account-abstraction/contracts";
 import axios from "axios";
 import { Toaster } from "react-hot-toast";
+import { QueryClient } from "@tanstack/react-query";
 
 const projectId = process.env.NEXT_PUBLIC_WC_PROJECT_ID as string; // get one at https://cloud.walletconnect.com/app
 
@@ -35,10 +36,14 @@ class AllowlistPaymasterAPI extends PaymasterAPI {
 }
 
 function App({ Component, pageProps }: AppProps) {
+    const queryClient = new QueryClient();
+
     return (
         <ThirdwebProvider
             activeChain={activeChain}
             supportedChains={[CeloAlfajoresTestnet]}
+            clientId={process.env.NEXT_PUBLIC_THIRDWEB_API_KEY}
+            queryClient={queryClient}
             // Define that we only want to support Account Abstraction wallets aka Smart Wallets
             supportedWallets={[
                 smartWallet({
@@ -51,8 +56,7 @@ function App({ Component, pageProps }: AppProps) {
                     gasless: true,
 
                     // API Key from the thirdweb dashboard. (You'll want to keep yours a secret)
-                    thirdwebApiKey: process.env
-                        .NEXT_PUBLIC_THIRDWEB_API_KEY as string,
+
                     personalWallets: [
                         walletConnect({
                             projectId,

@@ -49,7 +49,7 @@ export default function Home() {
                 action={(contract) =>
                     // Call the "mintTo" function with the following metadata.
                     // Metadata is uploaded to IPFS and pinned before the transaction is sent.
-                    contract.erc721.claim(10)
+                    contract.erc721.claim(1)
                 }
                 onSuccess={(result) => {
                     toast.success("NFT Minted!");
